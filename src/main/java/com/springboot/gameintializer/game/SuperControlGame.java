@@ -1,5 +1,10 @@
 package com.springboot.gameintializer.game;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class SuperControlGame implements GamingConsole {
 	public void up()
 	{

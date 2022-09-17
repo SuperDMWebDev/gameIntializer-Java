@@ -16,9 +16,9 @@ public class GameIntializerApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(GameIntializerApplication.class, args);
 		
-		context.getBean(GameRunner.class);
-		MarioGame game = new MarioGame();
-		SuperControlGame game1 = new SuperControlGame();
+		GameRunner game =context.getBean(GameRunner.class);
+		MarioGame game1 = new MarioGame();
+		SuperControlGame game2 = new SuperControlGame();
 		
 		GameRunner runner = new GameRunner(game1);
 		
